@@ -3,39 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CaliCraft - Play Minecraft in Your Browser</title>
+    <title>CaliCraft - Launch</title>
     <style>
+        /* Base styles for the page */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
         }
-        .header {
-            background-color: #00b300;
+
+        /* Header */
+        header {
+            background-color: #333;
             color: white;
-            padding: 10px 20px;
+            padding: 10px 0;
             text-align: center;
         }
-        .header h1 {
-            margin: 0;
-        }
-        .content {
-            text-align: center;
-            padding: 20px;
-        }
-        .button {
-            background-color: #f68f1f;
+
+        header a {
             color: white;
-            padding: 15px 30px;
+            text-decoration: none;
             font-size: 18px;
-            border: none;
-            cursor: pointer;
+            padding: 10px;
+        }
+
+        /* Main content */
+        .main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Style for the Launch button */
+        .launch-btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #7aff6a, #ffdb4d, #ff7700);
+            padding: 15px 30px;
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
             border-radius: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s ease, transform 0.3s ease;
         }
-        .button:hover {
-            background-color: #ff9900;
+
+        .launch-btn:hover {
+            background: linear-gradient(45deg, #ff7700, #ffdb4d, #7aff6a);
+            transform: scale(1.05);
         }
+
+        .launch-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* Information about the rules */
+        .info {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .info strong {
+            color: red;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: #ff7700;
+            text-decoration: none;
+        }
+
+        /* Server Advertisement */
         .server-ad {
             background-color: #ffa500;
             padding: 15px;
@@ -45,21 +94,21 @@
             border-radius: 5px;
             color: white;
         }
-        .footer {
-            background-color: #333;
+
+        .server-ad a {
             color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            font-weight: bold;
+            text-decoration: underline;
         }
+
+        /* Disclaimer */
         .disclaimer {
             background-color: #ffcc00;
             padding: 10px;
             margin-top: 20px;
             color: black;
         }
+
         .powered-by {
             position: fixed;
             bottom: 10px;
@@ -67,35 +116,39 @@
             font-size: 14px;
             color: gray;
         }
-        .server-ad a {
-            color: white;
-            font-weight: bold;
-            text-decoration: underline;
-        }
     </style>
 </head>
 <body>
-    <header class="header">
-        <h1>CaliCraft - Play Minecraft in Your Browser</h1>
+    <header>
+        <a href="/">CaliCraft</a>
     </header>
 
-    <div class="content">
-        <p>Welcome to CaliCraft! You can now play Minecraft directly in your browser. Please ensure that you are logged in with your own purchased account to play.</p>
-        <button class="button" onclick="window.location.href='wss://mc.arch.lol'">Play 1.8.8 Now</button>
+    <main class="main">
+        <h1>Welcome to CaliCraft!</h1>
+        <p>Ready to launch the game?</p>
+        <p><a href="wss://mc.arch.lol" class="launch-btn">Launch CaliCraft</a></p>
 
         <div class="server-ad">
             <p>Recommended Server to Play: <strong>ArchMC</strong></p>
             <p>Join the server at: <a href="wss://mc.arch.lol">wss://mc.arch.lol</a></p>
         </div>
 
+        <div class="info">
+            <p><strong>Note:</strong> To use our game, you must have a legitimate, purchased Minecraft account. Using cracked accounts violates both Minecraft's and CaliCraft's rules.</p>
+        </div>
+
         <div class="disclaimer">
             <p><strong>Disclaimer:</strong> This website and service is not affiliated with Mojang or Minecraft. CaliCraft only works with official Minecraft accounts. Using cracked accounts violates both Minecraft's and CaliCraft's terms of service.</p>
             <p>If you disagree with this, you may choose to close the website or contact us at <a href="mailto:report@smix.rf.gd">report@smix.rf.gd</a> to have the website shut down.</p>
         </div>
-    </div>
+    </main>
 
-    <footer class="footer">
-        <p>Powered by EagleCraftX | <a href="mailto:report@smix.rf.gd" style="color: white;">Contact Us</a></p>
+    <footer>
+        CaliCraft 2023-2024 — 
+        <a href="/p/legal/#terms-of-service">Terms of Service</a>
+        | <a href="/p/legal/#privacy-policy">Privacy Policy</a>
+        | <a href="/p/legal/#dmca">DMCA</a>
+        — This website is not affiliated with Mojang.
     </footer>
 
     <div class="powered-by">
@@ -103,3 +156,4 @@
     </div>
 </body>
 </html>
+
