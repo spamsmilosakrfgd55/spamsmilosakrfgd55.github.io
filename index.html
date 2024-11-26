@@ -1,39 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaliCraft - Launch</title>
+    <style>
+        /* Base styles for the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        /* Main content */
+        .main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Style for the Launch button */
+        .launch-btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #7aff6a, #ffdb4d, #ff7700);
+            padding: 15px 30px;
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .launch-btn:hover {
+            background: linear-gradient(45deg, #ff7700, #ffdb4d, #7aff6a);
+            transform: scale(1.05);
+        }
+
+        .launch-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* Information about the rules */
+        .info {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .info strong {
+            color: red;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: #ff7700;
+            text-decoration: none;
+        }
+    </style>
+</head>
 <body>
-    <header class="navigation-container" aria-label="Header">
-        <nav aria-label="Top Bar" class="navigation">
-            <a class="navigation__logo" href="/">Minecraft</a>
-            <div class="navigation__links navigation__links--start" aria-label="Site navigation">
-                <a class="navigation__link navigation__link--white" href="/">Home</a>
-                <div class="navigation__link--dropdown">
-                    <a class="navigation__link navigation__link--white">Game</a>
-                    <div class="navigation__link--dropdown-content">
-                        <a class="navigation__link navigation__link--white" href="/p/game/">What is Minecraft?</a>
-                        <a class="navigation__link navigation__link--white" href="/p/howtoplay/">Getting started</a>
-                        <a class="navigation__link navigation__link--white" href="/p/credits/">Credits</a>
-                    </div>
-                </div>
-                <a class="navigation__link navigation__link--white" href="https://servers.eaglercraft.com">Servers</a>
-                <a class="navigation__link navigation__link--white" href="/p/news/">News</a>
-                <a class="navigation__link navigation__link--white" href="/p/downloads/">Downloads</a>
-                <a class="navigation__link navigation__link--white" href="https://git.eaglercraft.rip/eaglercraft" target="_blank">Source</a>
-            </div>
-        </nav>
+    <header>
+        <a href="/">CaliCraft</a>
     </header>
 
-    <main class="main" aria-label="Main content">
-        <section classes="left" aria-label="Main">
-            <p>Minecraft is a game about breaking and placing blocks. At first, people built structures to protect against nocturnal monsters, but as the game grew, players worked together to create wonderful, imaginative things.</p>
-            <p>It can also be about adventuring with friends or watching the sun rise over a blocky ocean. It’s pretty. Brave players battle terrible things in The Nether, which is more scary than pretty. You can also visit a land of mushrooms if it sounds more like your cup of tea.</p>
-            <p><a href="/p/downloads/">You can play Minecraft on PC/Mac/Browser</a>. It can be played in the browser with Eaglercraft, an AOT compiled voxel game inspired by Minecraft designed to run on Javascript.</p>
-            <p>If you disagree with the terms and want to take the website down, feel free to send an email to <a href="mailto:report@smix.rf.gd">report@smix.rf.gd</a> and we will disable it.</p>
-        </section>
+    <main class="main">
+        <h1>Welcome to CaliCraft!</h1>
+        <p>Ready to launch the game?</p>
+        <p><a href="/p/downloads/" class="launch-btn">Launch CaliCraft</a></p>
+        <div class="info">
+            <p><strong>Note:</strong> To use our game, you must have a legitimate, purchased Minecraft account. Using cracked accounts violates both Minecraft's and CaliCraft's rules.</p>
+        </div>
     </main>
 
-    <footer class="footer" aria-label="Footer containing legal information">
-        Eaglercraft 2023-2024 — 
-        <a class="footer__link" href="/p/legal/#terms-of-service">Terms of Service</a>
-        | <a class="footer__link" href="/p/legal/#privacy-policy">Privacy Policy</a>
-        | <a class="footer__link" href="/p/legal/#dmca">DMCA</a>
+    <footer>
+        CaliCraft 2023-2024 — 
+        <a href="/p/legal/#terms-of-service">Terms of Service</a>
+        | <a href="/p/legal/#privacy-policy">Privacy Policy</a>
+        | <a href="/p/legal/#dmca">DMCA</a>
         — This website is not affiliated with Mojang.
     </footer>
 </body>
+</html>
